@@ -13,9 +13,9 @@ const BubbleWrapper = styled(motion.div)<StyledProps>`
 	left: ${(props) => props.$x}px;
 	top: ${(props) => props.$y}px;
 	transform: translate(-50%, -50%);
-	background: ${(props) => `var(--colour-${props.$index})`};
+	background: ${(props) => `var(--colour-${props.$index % 5})`};
 	border-radius: 100%;
-	mix-blend-mode: multiply;
+	mix-blend-mode: difference;
 `;
 
 type Props = {
