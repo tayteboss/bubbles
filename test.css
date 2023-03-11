@@ -1,0 +1,176 @@
+body {
+	letter-spacing: -0.025em;
+}
+
+.hero-text p  {
+	letter-spacing: -0.03em;
+}
+
+h3.title {
+	letter-spacing: -0.025em;
+}
+
+a.button {
+	letter-spacing: -0.015em;
+	text-transform: capitalize;
+}
+
+input#nf-footer.fullwidth.text-center {
+	letter-spacing: -0.015em;
+}
+
+button#subscribeMe {
+	letter-spacing: -0.015em;
+	text-transform: capitalize;
+}
+
+button.cartButton.is-primary  {
+	letter-spacing: -0.015em;
+	text-transform: capitalize;
+}
+
+button.is-primary.soldout  {
+	letter-spacing: -0.015em;
+	text-transform: capitalize;
+}
+
+h1 {
+	letter-spacing: -0.05em;
+	font-size: 2.2em;
+}
+
+span.price-regular  {
+	letter-spacing: -0.05em;
+	font-size: 2.2em;
+}
+
+button#subscribe  {
+	letter-spacing: -0.015em;
+	text-transform: capitalize;
+}
+
+button#thecheckoutbutton {
+	letter-spacing: -0.015em;
+	text-transform: capitalize;
+}
+
+h2.card-title.h6 {
+	font-size: 19px;
+	letter-spacing: -0.025em;
+}
+
+span.new-price  {
+	font-size: 19px;
+	letter-spacing: -0.025em;
+}
+
+.card-head {
+	height: 100%;
+}
+
+.card-head grid {
+	height: 100%;
+}
+
+.card-head c {
+	grid-column: 1 / -1 !important;
+	align-items: end;
+}
+
+.card-head flex {
+	height: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+}
+
+.title-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	white-space: nowrap;
+	padding: 0 !important;
+}
+
+.title-wrapper section {
+	width: unset !important;
+}
+
+.title-wrapper .price {
+	line-height: 1.4;
+}
+
+.productTax {
+	display: none;
+}
+
+.product-page #buyplatform {
+	padding-bottom: 20px !important;
+}
+
+.product-cells-custom-padding {
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+}
+
+.product-cells-custom-padding:first-child {
+	padding-top: 10px !important;
+	padding-bottom: 5px !important;
+}
+
+.product-page .installments {
+	padding: 0 !important;
+}
+
+.product-page .gallery {
+	border-top: none;
+}
+
+.p1:first-child {
+	margin-top: 0 !important;
+}
+
+@media (max-width: 777px) {
+	.card-head .card-price .new-price {
+		line-height: 2.1;
+		font-size: var(--hSize) !important;
+	}
+
+	.card-head .card-title {
+		margin-bottom: 0;
+		font-size: 16px !important;
+	}
+
+	.card-head .card-title a {
+		margin-bottom: 0;
+		font-size: 16px !important;
+	}
+
+	.hero .meta {
+		padding: calc(var(--padding) * 1);
+	}
+
+	.hero-text p, .hero-text strong {
+		font-size: var(--hSize);
+	}
+
+	.hero-text p {
+		line-height: 1.6 !important;
+	}
+
+	.product-page .gallery {
+		border-top: none !important;
+	}
+
+	.title-wrapper {
+		flex-direction: column;
+	}
+
+	.title-wrapper .title-stars {
+		padding-bottom: 0;
+	}
+
+	.title-wrapper section:last-child {
+		padding-top: 0;
+	}
+}
