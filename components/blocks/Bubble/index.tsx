@@ -67,8 +67,8 @@ const Bubble = (props: Props) => {
 			}
 		},
 		visible: {
-			height: '700px',
-			width: '700px',
+			height: '70vw',
+			width: '70vw',
 			transition: {
 				duration: duration / 2,
 				ease: 'easeInOut',
