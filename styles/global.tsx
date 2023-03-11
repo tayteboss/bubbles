@@ -41,6 +41,8 @@ export const GlobalStyles = createGlobalStyle`
 		scroll-behavior: smooth;
 		background: ${theme.colours.white};
 		font-size: 16px;
+		overflow: hidden;
+		background: #D9CCB4;
 
 		&.no-scroll {
 			overflow-y: hidden;

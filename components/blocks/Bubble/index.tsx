@@ -47,13 +47,21 @@ const Bubble = (props: Props) => {
 
 		audio.play();
 
+		let count = 0;
+
 		const intervalId = setInterval(() => {
+			if (count >= 1) {
+				clearInterval(intervalId); // Stop the interval after running 3 times
+				return;
+			}
+
 			audio.pause();
 			audio.currentTime = 0;
 			audio.play();
+
+			count++;
 		}, duration * 1000);
 
-	
 		return () => clearInterval(intervalId);
 	}, [duration]);
 
@@ -63,7 +71,10 @@ const Bubble = (props: Props) => {
 			width: 0,
 			transition: {
 				duration: duration / 2,
-				ease: 'easeInOut'
+				ease: 'easeInOut',
+				repeat: 3,
+				repeatType: "mirror",
+				repeatDelay: duration / 2 // in ms
 			}
 		},
 		visible: {
@@ -72,12 +83,11 @@ const Bubble = (props: Props) => {
 			transition: {
 				duration: duration / 2,
 				ease: 'easeInOut',
-				repeat: Infinity,
+				repeat: 3,
 				repeatType: "mirror"
 			}
 		}
 	};
-	
 
 	return (
 		<>
